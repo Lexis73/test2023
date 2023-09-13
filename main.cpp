@@ -73,14 +73,14 @@ string getTag(string htmlTag, string name)
 int main()
     {
 
-    setlocale(LC_ALL,"Russian");
+   
 
-// настройки
+// Г­Г Г±ГІГ°Г®Г©ГЄГЁ
     txCreateWindow (1300, 750);
     int inputLine=1;
     string http="";
  ifstream f1;
-// основной цикл программы
+// Г®Г±Г­Г®ГўГ­Г®Г© Г¶ГЁГЄГ« ГЇГ°Г®ГЈГ°Г Г¬Г¬Г»
 
     while (1)
     {
@@ -111,7 +111,7 @@ int main()
        int n;
        n=c;
        //cout<<n;
-       //--- удаление символа
+       //--- ГіГ¤Г Г«ГҐГ­ГЁГҐ Г±ГЁГ¬ГўГ®Г«Г 
        if (n==8&&http!="") http.erase(http.end()-1);
        else  http=http+c;
        txSetFillColor(TX_WHITE);
@@ -137,7 +137,7 @@ int main()
 
 
 
-     // подключение файла
+     // ГЇГ®Г¤ГЄГ«ГѕГ·ГҐГ­ГЁГҐ ГґГ Г©Г«Г 
 
      string fileName="index.html";
 
@@ -146,8 +146,8 @@ int main()
      f1.open(fileName) ;
      string htmlTag;
 
-  //-------   чтение из файла
-   while (f1.good())  // изменить while (
+  //-------   Г·ГІГҐГ­ГЁГҐ ГЁГ§ ГґГ Г©Г«Г 
+   while (f1.good())  // ГЁГ§Г¬ГҐГ­ГЁГІГј while (
    {
    f1>>htmlTag;
    cout<<"=="<<htmlTag;
